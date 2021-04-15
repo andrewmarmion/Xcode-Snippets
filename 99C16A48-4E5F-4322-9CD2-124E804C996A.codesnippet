@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ext_uivc_sb</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>extension UIViewController {
+    /// Instantiates a view controller with an indentifier matching the class name
+    /// - Returns: A UIViewController of the specific class
+    static func instantiate(name: String = "Main", bundle: Bundle? = Bundle.main) -&gt; Self {
+        let storyboard = UIStoryboard(name: name, bundle: bundle)
+        return storyboard.instantiateViewController(identifier: String(describing: Self.self)) as! Self
+    }
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>99C16A48-4E5F-4322-9CD2-124E804C996A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Creates an extension to UIViewController that instaniates a view controller from a storyboard</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Swift Instantiate UIViewController from Storyboard</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
